@@ -16,9 +16,10 @@ connectDB();
 
 // Middlewares
 app.use(cors({
-  origin: "blue-hope-nine.vercel.app", // Allow only this frontend URL
-  credentials: true, 
+  origin: "https://blue-hope-nine.vercel.app",
+  credentials: true,
 }));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
