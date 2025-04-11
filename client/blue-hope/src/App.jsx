@@ -13,7 +13,7 @@ import UserPage from './routes/Auth/userpage';
 import axios from 'axios';
 
 
-axios.defaults.baseURL = import.meta.env.VITE_API_URL;
+axios.defaults.baseURL = "https://aa56-2401-4900-7b83-b671-dcb5-753d-803a-3316.ngrok-free.app";
 
 axios.defaults.withCredentials = true;
 
@@ -21,7 +21,6 @@ function App() {
   return (
     <Router>
       <Header />
-      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
